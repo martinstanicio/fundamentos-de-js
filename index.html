@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fundamentos de JavaScript</title>
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="shortcut icon" href="./assets/img/favicon.svg" type="image/x-icon">
+</head>
+
+<body>
+  <header>
+    <img src="./assets/img/hero.jpg" alt="">
+    <div class="container">
+      <nav>
+        <ul>
+          <li><a href="/">Inicio</a></li>
+          <li><a href="/contacto.html">Contacto</a></li>
+          <li><a href="/fuentes.html">Fuentes</a></li>
+        </ul>
+      </nav>
+      <div>
+        <h1>Fundamentos de JavaScript</h1>
+        <p>Las bases de la programación explicadas con <strong>JavaScript</strong>.</p>
+      </div>
+    </div>
+  </header>
+  <div class="container">
+    <section id="tipos">
+      <h2>Tipos de datos</h2>
+      <p>En todo lenguage de programación existen tipos, JavaScript utiliza los siguentes:</p>
+      <article id="tipos_primitivos">
+        <h3>Tipos primitivos</h3>
+        <p>Los tipos primitivos son aquellos que <strong>no tienen complejidad</strong>, y son incapaces de contener
+          referencias a
+          otros
+          tipos, <a href="#variables">variables</a> o <a href="#variables_constantes">constantes</a>. Son los siguentes:
+        </p>
+        <ul>
+          <li><code>string</code>: también conocido como <strong>cadena de carácteres</strong>.</li>
+          <li><code>number</code>: números enteros, decimales, positivos y negativos.</li>
+          <li><code>boolean</code>: solo puede ser <code>true</code> (verdadero) o <code>false</code> (falso).</li>
+          <li><code>undefined</code>: representación de un valor indefinido; es asignado automáticamente cuando, por
+            ejemplo, se hace referencia a una <a href="#variables">variable</a> que no ha sido <a
+              href="#variables_inicializacion">inicializada</a>.</li>
+          <li><code>null</code>: similar a <code>undefined</code>, pero solo puede ser asignado por el programador, no
+            por JavaScript.</li>
+        </ul>
+      </article>
+
+      <article id="tipos_no-primitivos">
+        <h3>Tipos no primitivos</h3>
+        <p>Son grupos de valores, que a su vez pueden ser primitivos o no primitivos.</p>
+        <ul>
+          <li><code>Object</code>: llamados <em>diccionarios</em> en otros lenguages, son colleciones de pares
+            llave-valor. Por ejemplo: <code>{ llave: "valor", x: 3 }</code>.</li>
+          <li><code>Array</code>: simples listas, como un <code>Object</code>, pero con llaves asignadas por
+            JavaScript comenzando desde 0; estas llaves se llaman índices: Por ejemplo,
+            <code>["valor", 3, false]</code>.
+          </li>
+        </ul>
+        <p>Entonces, podemos decir que un <code>Object</code> es similar a una tabla de dos columnas:</p>
+        <table>
+          <thead>
+            <tr>
+              <td>Llave o <em>key</em></td>
+              <td>Valor o <em>value</em></td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>nombre</code></td>
+              <td><code>"Juan"</code></td>
+            </tr>
+            <tr>
+              <td><code>edad</code></td>
+              <td><code>22</code></td>
+            </tr>
+            <tr>
+              <td><code>tieneTrabajo</code></td>
+              <td><code>true</code></td>
+            </tr>
+            <tr>
+              <td><code>hobbies</code></td>
+              <td><code>["fútbol", "tenis", "programación"]</code></td>
+            </tr>
+          </tbody>
+        </table>
+        <p>Y lo mismo pasa con un <code>Array</code>:</p>
+        <table>
+          <thead>
+            <tr>
+              <td>Índice o <em>index</em></td>
+              <td>Valor o <em>value</em></td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>0</code></td>
+              <td><code>"fútbol"</code></td>
+            </tr>
+            <tr>
+              <td><code>1</code></td>
+              <td><code>"tenis"</code></td>
+            </tr>
+            <tr>
+              <td><code>2</code></td>
+              <td><code>"programación"</code></td>
+            </tr>
+          </tbody>
+        </table>
+      </article>
+    </section>
+
+    <section id="variables">
+      <h2>Variables</h2>
+      <p>Existen dos pasos en la creación de una variable.</p>
+      <ol>
+        <li>Declaración</li>
+        <li>Inicialización</li>
+      </ol>
+
+      <article id="variables_declaracion">
+        <h3>Declaración</h3>
+        <p>Antes de seleccionar un <strong>nombre</strong> para nuestra variable, debemos tener algunas cosas en cuenta:
+        </p>
+        <ul>
+          <li>Pueden contene letras, números, guiones bajos (_) y signos peso ($).</li>
+          <li>Deben comenzar con una letra, un guión bajo o un signo peso.</li>
+          <li>Es <em>case-sensitive</em>, es decir que una variable llamada <code>x</code> (minúscula) es completamente
+            diferente a una llamada <code>X</code> (mayúscula).</li>
+          <li>No se pueden utilizar palabras reservadas
+            (<code>let</code>, <code>for</code>, <code>import</code>, etc).</li>
+        </ul>
+        <figure>
+          <pre>var a;
+let b;</pre>
+          <figcaption>El estandar más reciente recomienda usar <code>let</code> sobre <code>var</code>.</figcaption>
+        </figure>
+      </article>
+
+      <article id="variables_inicializacion">
+        <h3>Inicialización</h3>
+        <p>Durante la inicialización de una variable, esta es asignada un <strong>valor</strong>.</p>
+        <figure>
+          <pre>a = -10.5;
+b = true;</pre>
+          <figcaption>El estandar más reciente recomienda usar <code>let</code> sobre <code>var</code></figcaption>
+        </figure>
+        <p>La declaración e inicialización pueden ser realizadas en un mismo paso:</p>
+        <figure>
+          <pre>let c = "Esto es una string";</pre>
+          <figcaption>El estandar más reciente recomienda usar <code>let</code> sobre <code>var</code></figcaption>
+        </figure>
+      </article>
+
+      <article id="variables_constantes">
+        <h3>Constantes</h3>
+        <p>Una constante es igual que una variable, solo que su valor no puede ser reasignado, por lo que la declaración
+          e inicialización debe ser realizada en un solo paso.</p>
+        <p>Es recomendable utilizar una constante a no ser que haya una razón para que sea una variable, no viceversa.
+        </p>
+        <figure>
+          <pre>const d = { ... };</pre>
+          <figcaption>Si una constante no se inicializa, tendrá un valor de <code>undefined</code> (indefinido).
+          </figcaption>
+        </figure>
+      </article>
+    </section>
+
+  </div>
+  <footer>
+    <div class="container">
+      <ul>
+        <li>Martín Stanicio</li>
+        <li>nTICx | Colegio del Norte</li>
+      </ul>
+    </div>
+  </footer>
+</body>
+
+</html>
