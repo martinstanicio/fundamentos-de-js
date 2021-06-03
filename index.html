@@ -30,13 +30,12 @@
   <div class="container">
     <section id="tipos">
       <h2>Tipos de datos</h2>
-      <p>En todo lenguage de programación existen tipos, JavaScript utiliza los siguentes:</p>
+      <p>En todo lenguage de programación existen tipos de datos, JavaScript utiliza los siguentes:</p>
       <article id="tipos_primitivos">
         <h3>Tipos primitivos</h3>
-        <p>Los tipos primitivos son aquellos que <strong>no tienen complejidad</strong>, y son incapaces de contener
-          referencias a
-          otros
-          tipos, <a href="#variables">variables</a> o <a href="#variables_constantes">constantes</a>. Son los siguentes:
+        <p>Los tipos primitivos son aquellos que <strong>no presentan ninguna complejidad</strong>, y son incapaces de
+          contener
+          referencias a otros tipos o <a href="#variables">variables</a>. Son los siguentes:
         </p>
         <ul>
           <li><code>string</code>: también conocido como <strong>cadena de carácteres</strong>.</li>
@@ -52,9 +51,9 @@
 
       <article id="tipos_no-primitivos">
         <h3>Tipos no primitivos</h3>
-        <p>Son grupos de valores, que a su vez pueden ser primitivos o no primitivos.</p>
+        <p>Son grupos de datos o referencias a estos.</p>
         <ul>
-          <li><code>Object</code>: llamados <em>diccionarios</em> en otros lenguages, son colleciones de pares
+          <li><code>Object</code>: llamados <em>diccionarios</em> en otros lenguajes, son colecciones de pares
             llave-valor. Por ejemplo: <code>{ llave: "valor", x: 3 }</code>.</li>
           <li><code>Array</code>: simples listas, como un <code>Object</code>, pero con llaves asignadas por
             JavaScript comenzando desde 0; estas llaves se llaman índices: Por ejemplo,
@@ -127,17 +126,19 @@
         <p>Antes de seleccionar un <strong>nombre</strong> para nuestra variable, debemos tener algunas cosas en cuenta:
         </p>
         <ul>
-          <li>Pueden contene letras, números, guiones bajos (_) y signos peso ($).</li>
-          <li>Deben comenzar con una letra, un guión bajo o un signo peso.</li>
+          <li>Puede contener letras, números, guiones bajos (_) y signos peso ($).</li>
+          <li>Debe comenzar con una letra, un guión bajo o un signo peso.</li>
           <li>Es <em>case-sensitive</em>, es decir que una variable llamada <code>x</code> (minúscula) es completamente
             diferente a una llamada <code>X</code> (mayúscula).</li>
-          <li>No se pueden utilizar palabras reservadas
+          <li>No se pueden utilizar palabras reservadas o <em>palabras clave</em>
             (<code>let</code>, <code>for</code>, <code>import</code>, etc).</li>
         </ul>
         <figure>
           <pre>var a;
 let b;</pre>
-          <figcaption>El estandar más reciente recomienda usar <code>let</code> sobre <code>var</code>.</figcaption>
+          <figcaption>El estandar más reciente recomienda el uso de <code>let</code>, y desalienta el uso de
+            <code>var</code>.
+          </figcaption>
         </figure>
       </article>
 
@@ -147,12 +148,10 @@ let b;</pre>
         <figure>
           <pre>a = -10.5;
 b = true;</pre>
-          <figcaption>El estandar más reciente recomienda usar <code>let</code> sobre <code>var</code></figcaption>
         </figure>
         <p>La declaración e inicialización pueden ser realizadas en un mismo paso:</p>
         <figure>
           <pre>let c = "Esto es una string";</pre>
-          <figcaption>El estandar más reciente recomienda usar <code>let</code> sobre <code>var</code></figcaption>
         </figure>
       </article>
 
@@ -163,8 +162,8 @@ b = true;</pre>
         <p>Es recomendable utilizar una constante a no ser que haya una razón para que sea una variable, no viceversa.
         </p>
         <figure>
-          <pre>const d = { ... };</pre>
-          <figcaption>Si una constante no se inicializa, tendrá un valor de <code>undefined</code> (indefinido).
+          <pre>const d = "Este valor no puede ser modificado";</pre>
+          <figcaption>Si una constante no es inicializada, tendrá un valor de <code>undefined</code> (indefinido).
           </figcaption>
         </figure>
       </article>
@@ -174,7 +173,7 @@ b = true;</pre>
   <footer>
     <div class="container">
       <ul>
-        <li>Martín Stanicio | Colegio del Norte</li>
+        <li>Diseño de Martín Stanicio</li>
         <li><a href="/fuentes.html">Fuentes</a></li>
       </ul>
     </div>
