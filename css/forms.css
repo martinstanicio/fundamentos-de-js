@@ -56,13 +56,14 @@ input[type="checkbox"] {
 
 input,
 textarea,
-fieldset {
+fieldset,
+select {
   border: 2px solid;
   border-color: var(--clr-primary-200);
   outline: none;
 }
 
-:is(input, textarea):focus,
+:is(input, textarea, select):focus,
 fieldset:focus-within {
   border-color: var(--clr-primary-500);
 }
@@ -78,7 +79,8 @@ input[type="reset"],
 input[type="text"],
 input[type="email"],
 input[type="password"],
-textarea {
+textarea,
+select {
   padding: 0.5rem;
   width: 100%;
 }

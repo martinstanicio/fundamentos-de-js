@@ -61,6 +61,16 @@
         </fieldset>
 
         <div class="field">
+          <label for="asunto">Asunto</label>
+          <select name="asunto" id="asunto" required>
+            <option value="" disabled selected>Seleccione una opción</option>
+            <option value="soporte">Soporte</option>
+            <option value="sugerencias">Sugerencia</option>
+            <option value="otro">Otro</option>
+          </select>
+        </div>
+
+        <div class="field">
           <label for="mensaje">Tu mensaje</label>
           <textarea name="mensaje" id="mensaje" required></textarea>
         </div>
