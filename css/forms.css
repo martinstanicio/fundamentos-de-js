@@ -39,17 +39,18 @@ fieldset ul {
   margin: 0.5rem;
 }
 
-.radio {
+:is(.radio, .checkbox) {
   display: flex;
   align-items: center;
   gap: 0.25rem;
 }
 
-.radio label {
+:is(.radio, .checkbox) label {
   line-height: 0;
 }
 
-input[type="radio"] {
+input[type="radio"],
+input[type="checkbox"] {
   filter: grayscale(100%);
 }
 
