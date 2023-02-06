@@ -6,24 +6,31 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Fuentes | Fundamentos de JavaScript</title>
-  <link rel="stylesheet" href="./css/main.css">
-  <link rel="shortcut icon" href="./img/favicon.svg" type="image/x-icon">
+  <link rel="stylesheet" href="./css/main.css" />
+  <link rel="shortcut icon" href="./img/favicon.svg" type="image/x-icon" />
 </head>
 
 <body>
   <header>
-    <img src="./img/hero.jpg" alt="">
+    <img src="./img/hero.jpg" alt="" class="hero" />
     <div class="container">
       <nav>
         <ul>
           <li><a href="index.html">Inicio</a></li>
           <li><a href="acerca.html">Acerca de</a></li>
           <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="recursos.html">Recursos</a></li>
         </ul>
       </nav>
-      <div>
-        <h1>Fundamentos de JavaScript</h1>
-        <p>Las bases de la programación explicadas con <strong>JavaScript</strong>.</p>
+      <div class="branding">
+        <img src="./img/favicon.svg" alt="Logo" class="logo" />
+        <div>
+          <h1>Fundamentos de JavaScript</h1>
+          <p>
+            Las bases de la programación explicadas con
+            <strong>JavaScript</strong>.
+          </p>
+        </div>
       </div>
     </div>
   </header>
@@ -31,31 +38,40 @@
     <section id="contactanos">
       <h2>Contactanos</h2>
 
+      <p>
+        También podes enviarnos un mail a
+        <a href="mailto:contacto@fundamentosdejs.com">contacto@fundamentosdejs.com</a>.
+      </p>
+
       <form>
         <div class="field">
           <label for="nombre">Nombre completo</label>
-          <input type="text" name="nombre" id="nombre" placeholder="Juan Perez">
+          <input type="text" name="nombre" id="nombre" placeholder="Juan Perez" />
         </div>
 
         <div class="field">
           <label for="email">Email</label>
-          <input type="email" name="email" id="email" required placeholder="juan@perez.com">
+          <input type="email" name="email" id="email" required placeholder="juan@perez.com" />
         </div>
 
         <fieldset>
           <legend>Sexo</legend>
           <ul>
             <li class="radio">
-              <input type="radio" name="sexo" value="m" id="m">
+              <input type="radio" name="sexo" value="m" id="m" />
               <label for="m">Hombre</label>
             </li>
             <li class="radio">
-              <input type="radio" name="sexo" value="f" id="f">
+              <input type="radio" name="sexo" value="f" id="f" />
               <label for="f">Mujer</label>
             </li>
             <li class="radio">
-              <input type="radio" name="sexo" value="o" id="o">
+              <input type="radio" name="sexo" value="o" id="o" />
               <label for="o">Otro</label>
+            </li>
+            <li class="radio">
+              <input type="radio" name="sexo" value="x" id="x" />
+              <label for="x">Prefiero no decirlo</label>
             </li>
           </ul>
         </fieldset>
@@ -63,7 +79,9 @@
         <div class="field">
           <label for="asunto">Asunto</label>
           <select name="asunto" id="asunto" required>
-            <option value="" disabled hidden selected>Seleccione una opción</option>
+            <option value="" disabled hidden selected>
+              Seleccione una opción
+            </option>
             <option value="soporte">Soporte</option>
             <option value="sugerencias">Sugerencia</option>
             <option value="otro">Otro</option>
@@ -76,18 +94,16 @@
         </div>
 
         <div class="checkbox">
-          <input type="checkbox" name="terminosYCondiciones" id="terminosYCondiciones" required>
+          <input type="checkbox" name="terminosYCondiciones" id="terminosYCondiciones" required />
           <label for="terminosYCondiciones">Acepto los términos y condiciones</label>
         </div>
 
         <div class="buttons">
-          <input type="submit" value="Enviar">
-          <input type="reset" value="Reiniciar formulario">
+          <input type="submit" value="Enviar" />
+          <input type="reset" value="Reiniciar formulario" />
         </div>
       </form>
     </section>
-
-
   </div>
   <footer>
     <div class="container">
@@ -95,8 +111,21 @@
         <li>Diseñado por Martín Stanicio – Colegio del Norte 2021.</li>
         <li><a href="fuentes.html">Fuentes</a></li>
       </ul>
+      <ul>
+        <li><label for="color">Color</label></li>
+        <li>
+          <input type="range" name="color" id="color" min="0" max="360" value="220" class="slider" />
+        </li>
+      </ul>
+      <audio controls autoplay loop>
+        <source src="./media/audio.ogg" type="audio/ogg" />
+        <source src="./media/audio.mp3" type="audio/mpeg" />
+        Tu navegador no soporta audio HTML.
+      </audio>
     </div>
   </footer>
+
+  <script src="./js/index.js"></script>
 </body>
 
 </html>

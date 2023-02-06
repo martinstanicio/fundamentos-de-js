@@ -6,24 +6,31 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Fuentes | Fundamentos de JavaScript</title>
-  <link rel="stylesheet" href="./css/main.css">
-  <link rel="shortcut icon" href="./img/favicon.svg" type="image/x-icon">
+  <link rel="stylesheet" href="./css/main.css" />
+  <link rel="shortcut icon" href="./img/favicon.svg" type="image/x-icon" />
 </head>
 
 <body>
   <header>
-    <img src="./img/hero.jpg" alt="">
+    <img src="./img/hero.jpg" alt="" class="hero" />
     <div class="container">
       <nav>
         <ul>
           <li><a href="index.html">Inicio</a></li>
           <li><a href="acerca.html">Acerca de</a></li>
           <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="recursos.html">Recursos</a></li>
         </ul>
       </nav>
-      <div>
-        <h1>Fundamentos de JavaScript</h1>
-        <p>Las bases de la programación explicadas con <strong>JavaScript</strong>.</p>
+      <div class="branding">
+        <img src="./img/favicon.svg" alt="Logo" class="logo" />
+        <div>
+          <h1>Fundamentos de JavaScript</h1>
+          <p>
+            Las bases de la programación explicadas con
+            <strong>JavaScript</strong>.
+          </p>
+        </div>
       </div>
     </div>
   </header>
@@ -33,14 +40,20 @@
 
       <article id="acerca_quienes-somos">
         <h3>¿Quiénes somos?</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis cupiditate, qui dolor nostrum nesciunt
-          provident! Eligendi debitis nihil corrupti quod explicabo facilis voluptas, ratione soluta quos nostrum, enim
-          deserunt excepturi.</p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+          cupiditate, qui dolor nostrum nesciunt provident! Eligendi debitis
+          nihil corrupti quod explicabo facilis voluptas, ratione soluta quos
+          nostrum, enim deserunt excepturi.
+        </p>
       </article>
       <article id="acerca_objetivos">
         <h3>Nuestros objetivos</h3>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates iste rem maiores. Delectus blanditiis
-          quo velit illum dolore, quas alias.</p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates
+          iste rem maiores. Delectus blanditiis quo velit illum dolore, quas
+          alias.
+        </p>
         <ul>
           <li>Lorem ipsum dolor sit, amet consectetur adipisicing.</li>
           <li>Autem, magni iste! Porro tempora cupiditate repellendus!</li>
@@ -48,8 +61,6 @@
         </ul>
       </article>
     </section>
-
-
   </div>
   <footer>
     <div class="container">
@@ -57,8 +68,21 @@
         <li>Diseñado por Martín Stanicio – Colegio del Norte 2021.</li>
         <li><a href="fuentes.html">Fuentes</a></li>
       </ul>
+      <ul>
+        <li><label for="color">Color</label></li>
+        <li>
+          <input type="range" name="color" id="color" min="0" max="360" value="220" class="slider" />
+        </li>
+      </ul>
+      <audio controls autoplay loop>
+        <source src="./media/audio.ogg" type="audio/ogg" />
+        <source src="./media/audio.mp3" type="audio/mpeg" />
+        Tu navegador no soporta audio HTML.
+      </audio>
     </div>
   </footer>
+
+  <script src="./js/index.js"></script>
 </body>
 
 </html>

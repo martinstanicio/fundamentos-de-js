@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Recursos | Fundamentos de JavaScript</title>
+  <link rel="stylesheet" href="./css/main.css" />
+  <link rel="shortcut icon" href="./img/favicon.svg" type="image/x-icon" />
+</head>
+
+<body>
+  <header>
+    <img src="./img/hero.jpg" alt="" class="hero" />
+    <div class="container">
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="acerca.html">Acerca de</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="recursos.html">Recursos</a></li>
+        </ul>
+      </nav>
+      <div class="branding">
+        <img src="./img/favicon.svg" alt="Logo" class="logo" />
+        <div>
+          <h1>Fundamentos de JavaScript</h1>
+          <p>
+            Las bases de la programación explicadas con
+            <strong>JavaScript</strong>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="container">
+    <section id="recursos">
+      <h2>Recursos</h2>
+
+      <article id="recursos_aprender">
+        <h3>Para aprender</h3>
+        <ul>
+          <li>
+            Tutoriales y ejercicios de
+            <a href="https://www.w3schools.com/" target="_blank">W3 Schools</a>.
+          </li>
+          <li>
+            Guias de
+            <a href="https://developer.mozilla.org/" target="_blank">Mozilla Developer Network</a>.
+          </li>
+          <li>
+            Artículos y blogs de la
+            <a href="https://dev.to/" target="_blank">comunidad DEV</a>.
+          </li>
+        </ul>
+      </article>
+      <article id="recursos_dudas">
+        <h3>Para resolver problemas</h3>
+        <ul>
+          <li>
+            Foros de
+            <a href="https://stackoverflow.com/" target="_blank">Stack Overflow</a>.
+          </li>
+          <li>
+            Comunidades
+            <a href="https://www.reddit.com/r/learnjavascript/" target="_blank">Learn JavaScript</a>
+            y <a href="https://www.reddit.com/r/javascript/" target="_blank">JavaScript</a> en
+            Reddit.
+          </li>
+        </ul>
+      </article>
+      <article id="recursos_otro">
+        <h3>Otros</h3>
+        <ul>
+          <li>
+            <a href="./media/cheatsheet.pdf" download>Cheatsheet</a> de
+            <a href="https://www.paradigmadigital.com/" target="_blank">Paradigma digital</a>.
+          </li>
+        </ul>
+      </article>
+    </section>
+  </div>
+  <footer>
+    <div class="container">
+      <ul>
+        <li>Diseñado por Martín Stanicio – Colegio del Norte 2021.</li>
+        <li><a href="fuentes.html">Fuentes</a></li>
+      </ul>
+      <ul>
+        <li><label for="color">Color</label></li>
+        <li>
+          <input type="range" name="color" id="color" min="0" max="360" value="220" class="slider" />
+        </li>
+      </ul>
+      <audio controls autoplay loop>
+        <source src="./media/audio.ogg" type="audio/ogg" />
+        <source src="./media/audio.mp3" type="audio/mpeg" />
+        Tu navegador no soporta audio HTML.
+      </audio>
+    </div>
+  </footer>
+
+  <script src="./js/index.js"></script>
+</body>
+
+</html>

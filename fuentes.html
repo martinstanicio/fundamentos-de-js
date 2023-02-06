@@ -6,24 +6,31 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Fuentes | Fundamentos de JavaScript</title>
-  <link rel="stylesheet" href="./css/main.css">
-  <link rel="shortcut icon" href="./img/favicon.svg" type="image/x-icon">
+  <link rel="stylesheet" href="./css/main.css" />
+  <link rel="shortcut icon" href="./img/favicon.svg" type="image/x-icon" />
 </head>
 
 <body>
   <header>
-    <img src="./img/hero.jpg" alt="">
+    <img src="./img/hero.jpg" alt="" class="hero" />
     <div class="container">
       <nav>
         <ul>
           <li><a href="index.html">Inicio</a></li>
           <li><a href="acerca.html">Acerca de</a></li>
           <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="recursos.html">Recursos</a></li>
         </ul>
       </nav>
-      <div>
-        <h1>Fundamentos de JavaScript</h1>
-        <p>Las bases de la programación explicadas con <strong>JavaScript</strong>.</p>
+      <div class="branding">
+        <img src="./img/favicon.svg" alt="Logo" class="logo" />
+        <div>
+          <h1>Fundamentos de JavaScript</h1>
+          <p>
+            Las bases de la programación explicadas con
+            <strong>JavaScript</strong>.
+          </p>
+        </div>
       </div>
     </div>
   </header>
@@ -34,24 +41,27 @@
       <article id="fuentes_codigo">
         <h3>Codigo</h3>
         <ul>
-          <li>Normalize.css por <a href="https://github.com/necolas">Nicolas Gallagher</a>
-            en <a href="https://github.com/necolas/normalize.css">GitHub</a>.
+          <li>
+            Normalize.css por
+            <a href="https://github.com/necolas" target="_blank">Nicolas Gallagher</a> en
+            <a href="https://github.com/necolas/normalize.css" target="_blank">GitHub</a>.
           </li>
         </ul>
       </article>
       <article id="fuentes_multimedia">
         <h3>Multimedia</h3>
         <ul>
-          <li>Imagen del encabezado por <a
-              href="https://unsplash.com/@jeshoots?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">JESHOOTS.COM</a>
-            en <a
-              href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>.
+          <li>
+            Imagen del encabezado por
+            <a href="https://unsplash.com/@jeshoots?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+              target="_blank">JESHOOTS.COM</a>
+            en
+            <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+              target="_blank">Unsplash</a>.
           </li>
         </ul>
       </article>
     </section>
-
-
   </div>
   <footer>
     <div class="container">
@@ -59,8 +69,21 @@
         <li>Diseñado por Martín Stanicio – Colegio del Norte 2021.</li>
         <li><a href="fuentes.html">Fuentes</a></li>
       </ul>
+      <ul>
+        <li><label for="color">Color</label></li>
+        <li>
+          <input type="range" name="color" id="color" min="0" max="360" value="220" class="slider" />
+        </li>
+      </ul>
+      <audio controls autoplay loop>
+        <source src="./media/audio.ogg" type="audio/ogg" />
+        <source src="./media/audio.mp3" type="audio/mpeg" />
+        Tu navegador no soporta audio HTML.
+      </audio>
     </div>
   </footer>
+
+  <script src="./js/index.js"></script>
 </body>
 
 </html>
